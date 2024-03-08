@@ -1,0 +1,150 @@
+body { /* MARGEM E FONTE EM TODO O SITE*/
+  padding: 0;
+  margin: 0;
+  font-family: Proxima Nova, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Isso significa que o primeiro elemento será colocado no início do contêiner, o último no final e os elementos restantes serão espaçados igualmente entre eles.*/
+  padding: 32px; /*espaçamento do topo*/
+  align-items: center;
+  border-bottom: 1px solid #2600ff; 
+}
+
+.logo {
+  display: flex;
+
+  img {
+    width: 227px;
+    height: 50px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-left: 32px; /*JOGA O PARAGRAFO PRA DIREITA*/
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  ul {
+    display: flex;
+    list-style: none;/*tirar as bolinha*/
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-left: 32px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ff0000; /*nao sei oq ta fzd*/
+      cursor: pointer; /*ponteirinho*/
+    }
+
+    a {
+      text-decoration: none;/*tira a linha e o clicavel*/
+      color: #000;
+    }
+  }
+}/*FIM CABEÇALHO*/
+
+
+.grid-container {
+  display: grid;
+  column-gap: 50px; /*espaçamento horizontal das colunas*/
+  grid-template-columns: auto auto auto; /* layoute de grade com 3 colunas ajustadas automaticamente*/
+  padding: 32px 350px; /*o padding q fez um entrar em baixo do outro? "nao" mas ele influencia de certa forma*/
+  border: 1px solid black; /*só pra ver o grid*/
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; /*você está instruindo o contêiner flexível a organizar seus itens verticalmente ao longo do eixo principal, em vez de horizontalmente, que é o comportamento padrão.*/
+}
+
+.title {
+  font-size: 64px;
+  color: #000;
+  margin-top: 32px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text {
+  font-size: 16px;
+  color: #000;
+  margin-top: 32px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.button {
+  background-color: #000;
+  color: #fff;
+  padding: 16px 32px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 32px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.grid-container-2 {
+  background-color: #dddddd;
+  display: flex;
+  justify-content: center;
+  padding: 64px 350px;
+  border: 1px solid black;
+
+}
+
+.text-grid-2 {
+  font-size: 14px;
+}
+
+.grid-container-3 {
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: auto auto auto auto; /* 4 colunas 4 imagens*/
+  padding: 32px 350px;
+}
+
+.titulo-grid-2 {
+  font-weight: 700;
+}
+
+.rodape {
+  display: grid;
+  column-gap: 3px;
+  grid-template-columns: auto auto auto auto; /* 4 colunas 4 imagens*/
+  padding: 32px 350px;
+  
+}
+.formulario {
+            
+              margin: 0 auto;
+              font-family: Arial, sans-serif; 
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 20px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              box-sizing: border-box;
+
+}
+
+.whatsapp {
+  width: 100px;
+  height: 100px;
+}
+
+.fim {
+  padding: auto;
+  display: flex;
+}
+
